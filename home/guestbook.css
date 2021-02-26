@@ -1,0 +1,43 @@
+.guestbook-image{
+    position:auto;
+    flex:5;
+    margin: 10px;
+    border-radius: 3px;
+    border:dashed black 1px;
+    display: flex;
+    flex-direction: row;
+
+} 
+.mara{
+    flex:1;
+    background-image: url('../static/images/mara.jpg');
+    background-size: cover;
+    margin:20px;
+    background-color: violet;
+    height: 150px;
+    width: 100px;
+}
+.guestcontent{
+    flex:2;
+    margin:20px;
+    text-align: center;
+}
+.ball{
+    flex:1;
+    background-image: url('../static/images/ball.jpg');
+    background-size: cover;
+    margin:20px;
+    background-color: violet;
+    height: 150px;
+    width: 100px;
+}
+
+.cute{
+    flex:1;
+    background-image: url('../static/images/cute.jpg');
+    background-size: cover;
+    margin:20px;
+    background-color: violet;
+    height: 150px;
+    width: 100px;
+}

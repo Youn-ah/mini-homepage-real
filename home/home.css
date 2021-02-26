@@ -1,0 +1,147 @@
+
+    body {
+    background-color: #a3a3a3;
+    /** body에 배경이미지 적용 */
+    background-image: url("../static/images/pattern.png");
+    /** 고정된 사이즈로 설정 */
+    background-size: 100px;
+  
+    /** 기본 body 사이즈를 화면 크기로 고정 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  
+  a { text-decoration:none }
+  
+  .bookcover {
+    /** 배경 색깔 지정  */
+    background-color: #b4d1da;
+    /** 모서리 둥글게 */
+    border-radius: 9px;
+    /** 윤곽선 */
+    border: 1px solid #738186;
+  
+    /** 기본 너비, 높이 지정 (반응형 X) */
+    width: 960px;
+    height: 660px;
+  
+    /** 좌우 마진을 auto(중앙에 배치), 상하 마진을 100px로 지정 */
+    margin: 100px auto;
+  
+    /** .bookdot 요소에서 absolute 속성값을 이용하기 위해 position: relative 로 설정 */
+    position: relative;
+  }
+  
+  .bookdot{ 
+    /**absolute속성값 이용하여 설정하기*/
+    position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;
+    /**모서리 둥글게*/
+    border-radius: 5px;
+    /**윤곽선*/
+    border: 3px dashed white;
+  }
+  
+  .page{
+    position:absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;
+    background-color: rgb(218, 216, 216); 
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .left{ 
+    flex:0.4;
+    display: flex;
+    flex-direction: column;
+    font-size:small;
+    text-align: center;
+    padding: 10px;
+  }
+  .row1{
+    flex:0.3;
+  
+  }
+  .row2{
+    flex:8;
+    border-radius: 3px;
+    border:black 0.5px dashed;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .picture{
+    flex:0.3;
+    background-image: url('../static/images/salmon.jpg');
+    background-size : cover ;
+    background-color: pink;
+    margin:10px;
+  }
+  .introduction{
+    flex:0.3;
+    margin:10px;
+    text-align: left;
+    border-bottom: black 1px dashed;
+    
+  }
+  .row3{
+    flex:0.3;
+    display: flex;
+    font-size:small;
+    text-align:left;
+  }
+  .row4{
+    flex:8;
+    border-radius: 3px;
+    border:black 0.5px dashed;
+    background-color: white;
+    display: flex;
+    height: 572px;
+    flex-direction: column;
+  }
+
+  .middle{
+    flex:1.5;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-right: 0px;
+    width:590px;
+    height: 570px;
+  }
+
+
+  .dropbtn {
+    background-color: #cac2c2c0;
+    color: white;
+    font-size: auto;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #999999;}
